@@ -2,6 +2,9 @@
 // select all img in .imgs class
 const [current, imgs] = [document.querySelector('#current'), document.querySelectorAll('.imgs img')];
 
+// Set first image opacity
+imgs[0].style.opacity = 0.6;
+
 // Loop through imgs array
 // Add Event Listener to each image
 imgs.forEach(img => img.addEventListener('click', imgClick));
