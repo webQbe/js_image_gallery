@@ -9,6 +9,9 @@ imgs.forEach(img => img.addEventListener('click', imgClick));
 // Define imgClick
 function imgClick(e){
 
+    // Reset opacity of all images
+    imgs.forEach(img => (img.style.opacity = 1));     
+
     // Set clicked image src as current image src
     current.src = e.target.src;
 
