@@ -18,6 +18,12 @@ function imgClick(e){
     // Add .fade-in class
     current.classList.add('fade-in');
 
+    // Remove .fade-in class from current image
+    // after 0.5 second
+    setTimeout(() => current.classList.remove('fade-in'), 500);
+
+    /* This solves .fade-in effect not applied after first click issue */
+ 
     // change clicked image's opacity
     e.target.style.opacity = 0.4;
 
